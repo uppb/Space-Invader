@@ -2,6 +2,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 public class Player extends GraphicsObject{
+
     double x;
     double y;
     double speed_x;
@@ -9,8 +10,8 @@ public class Player extends GraphicsObject{
 
     public Player(double x, double y){
         super(x,y);
-        this.speed_x = 0;
-        this.speed_y = 0;
+        this.x = x;
+        this.y = y;
     }
     public void draw(Graphics g){
         g.setColor(new Color(0,0,0));
