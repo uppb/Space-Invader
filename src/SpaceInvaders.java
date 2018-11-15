@@ -31,6 +31,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
     private Timer timer;
     private int frame = 0;
 
+    Player player = new Player(285,320);
     // FIXME list your game objects here
 
     /* Constructor for a Space Invaders game
@@ -178,7 +179,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
      * @param g The Graphics for the JPanel
      */
     private void paintGameScreen(Graphics g) {
-        // FIXME draw game objects here
+        player.draw(g);
     }
 
     /* Paint the screen when the player has won
