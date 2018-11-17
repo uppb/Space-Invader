@@ -35,6 +35,8 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
 
     private Player player;
     private Alien[] aliens = new Alien[48];
+    private ArrayList<PlayerBullet> bullets;
+
     private int ax;
     private int ay;
     // FIXME list your game objects here
@@ -57,9 +59,10 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
                 ax = 20;
                 ay += 25;
             }
-            aliens[i] = new Alien(ax,ay,1.8);
+            aliens[i] = new Alien(ax,ay,new Color(218, 76, 216));
             ax += 30;
         }
+        this.bullets = new ArrayList<PlayerBullet>();
         // FIXME initialize your game objects
     }
 
@@ -166,11 +169,25 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
         } else if (e.getKeyCode() == KeyEvent.VK_SPACE) {
             isPlayerFired = true;
         }
+
     }
 
     /* Move the player object smoothly
 
      */
+    public void fireBullet(){
+        if(isPlayerFired == true){
+            bullets.add(new PlayerBullet(player.x+12.5, player.y-20));
+        }
+    }
+    public void MoveBullet(){
+        for(int i = 0; i < bullets.size(); i++){
+            bullets.get(i).y -= bullets.get(i).speed_y;
+            if(bullets.get(i).y < 0){
+                bullets.remove(i);
+            }
+        }
+    }
     public void PlayerAction(){
         if(player.x < 0){
             player.x += player.speed_x;
@@ -184,11 +201,6 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
         if(isRightKeyPressed == true){
             player.x += player.speed_x;
         }
-        if(isPlayerFired == true){
-            //PlayerBullet bullet = new PlayerBullet(player.x+15,player.y-15);
-            //bullet.y -= bullet.speed_y;
-        }
-
     }
 
     public void MoveAlien(){
@@ -218,11 +230,35 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
         }
     }
 
+    public void OnTouch(){
+        for(int i = 0; i < aliens.length; i++){
+            boolean isCollide = false;
+            if(aliens[i].visible == true){
+                for(int j = 0; j < bullets.size(); j++){
+                    if(bullets.get(j).y - aliens[i].y < 15 && bullets.get(j).x - aliens[i].x < 5){
+                        bullets.remove(j);
+                        isCollide = true;
+                        aliens[i].visible = false;
+                        break;
+                    }
+                }
+                if(isCollide == true){
+                    aliens[i] = new Alien(aliens[i].x,aliens[i].y,new Color(255,255,255));
+                }
+            }
+
+        }
+    }
+
+
     /* Update the game objects
      */
     private void update() {
         PlayerAction();
         MoveAlien();
+        MoveBullet();
+        fireBullet();
+        OnTouch();
         // FIXME update game objects here
     }
 
@@ -247,9 +283,12 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
      * @param g The Graphics for the JPanel
      */
     private void paintGameScreen(Graphics g) {
-        player.draw(g);
         for(int i = 0; i < aliens.length; i++){
             aliens[i].draw(g);
+        }
+        player.draw(g);
+        for(int i = 0; i < bullets.size(); i++){
+            bullets.get(i).draw(g);
         }
     }
 

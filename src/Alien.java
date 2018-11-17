@@ -8,18 +8,23 @@ public class Alien extends GraphicsObject {
     double speed_x;
     boolean MoveRight;
     boolean MoveLeft;
+    Color color;
+    boolean visible;
 
-    public Alien(double x, double y, double speed_x){
+    public Alien(double x, double y,Color color){
         super(x,y);
         this.x = x;
         this.y = y;
-        this.speed_x = speed_x;
+        this.speed_x = 1.8;
         this.MoveRight = true;
         this.MoveLeft = false;
+        this.color = color;
+        this.visible = true;
     }
 
     public void draw(Graphics g){
-        g.setColor(new Color(218, 76, 216));
+        g.setColor(color);
         g.fillRect((int)this.x, (int)this.y, 18, 18);
     }
+
 }

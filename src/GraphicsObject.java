@@ -31,7 +31,7 @@ public class GraphicsObject {
      * @param pic_height  The height of the drawing window
      * @param frame       The number of frames since the start of the program
      */
-    public void update(int pic_width, int pic_height, int frame) {
+    public void update() {
         this.x += this.speed_x;
         this.y += this.speed_y;
     }

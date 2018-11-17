@@ -17,6 +17,6 @@ public class PlayerBullet extends GraphicsObject{
 
     public void draw(Graphics g){
         g.setColor(new Color(220, 52, 25));
-        g.fillOval((int)this.x,(int)this.y,15,15);
+        g.fillOval((int)this.x,(int)this.y,5,20);
     }
 }
