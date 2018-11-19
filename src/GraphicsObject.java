@@ -7,6 +7,8 @@ public class GraphicsObject {
     double y;
     double speed_x;
     double speed_y;
+    int posX;
+    int posY;
 
     public GraphicsObject(double x, double y) {
         this.x = x;
@@ -31,6 +33,14 @@ public class GraphicsObject {
      * @param pic_height  The height of the drawing window
      * @param frame       The number of frames since the start of the program
      */
+    public void setX(int posX) {
+        this.posX = posX;
+    }
+
+    public void setY(int posY) {
+        this.posY = posY;
+    }
+
     public void update() {
         this.x += this.speed_x;
         this.y += this.speed_y;
