@@ -14,7 +14,7 @@ public class Player extends GraphicsObject{
         this.speed_x = 6;
     }
     public void draw(Graphics g){
-        g.setColor(new Color(0,0,0));
+        g.setColor(new Color(0, 0, 0));
         g.fillRect((int)this.x, (int)this.y, 30, 30);
     }
 

@@ -39,7 +39,8 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
 
     private int ax;
     private int ay;
-    // FIXME list your game objects here
+    boolean gameWon = false;
+    boolean gameOver = false;
 
     /* Constructor for a Space Invaders game
      */
@@ -174,13 +175,17 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
     }
 
     /* Move the player object smoothly
-
      */
     public void fireBullet(){
         if(isPlayerFired == true && dt >= 2){
             bullets.add(new PlayerBullet(player.x+12.5, player.y-20));
         }
     }
+
+    public void fireAlienBullet() {
+
+    }
+
     public void MoveBullet(){
         for(int i = 0; i < bullets.size(); i++){
             bullets.get(i).y -= bullets.get(i).speed_y;
@@ -281,7 +286,15 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
      * @returns  true if the player has won, false otherwise
      */
     private boolean hasWonGame() {
-        return false; // FIXME delete this when ready
+        boolean all = false;
+        for(int i =0; i < aliens.length; i++){
+            if(aliens[i].visible == true){
+                all = true;
+            }
+        }
+        if(all == true){
+            return true;
+        }else return false;
     }
 
     /* Paint the screen during normal gameplay
@@ -303,7 +316,12 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
      * @param g The Graphics for the JPanel
      */
     private void paintWinScreen(Graphics g) {
-        // FIXME draw the win screen here
+
+        //about 300 pixels wide
+        g.setFont(new Font("Arial",Font.BOLD,50));
+        g.setColor(Color.RED);
+        int xPos = getWidth()/2 - 145;
+        g.drawString("GAME WON!",(xPos < 0 ? 0 : xPos),getHeight()/2);
     }
 
     /* Paint the screen when the player has lost
@@ -311,7 +329,11 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
      * @param g The Graphics for the JPanel
      */
     private void paintLoseScreen(Graphics g) {
-        // FIXME draw the game over screen here
+        //about 310 pixels wide
+        g.setFont(new Font("Arial",Font.BOLD,50));
+        g.setColor(Color.RED);
+        int xPos = getWidth()/2 - 155;
+        g.drawString("GAME OVER, YOU LOSE",(xPos < 0 ? 0 : xPos),getHeight()/2);
     }
 
     public static void main(String[] args) {
