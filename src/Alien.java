@@ -11,15 +11,15 @@ public class Alien extends GraphicsObject {
     Color color;
     boolean visible;
 
-    public Alien(double x, double y,Color color){
+    public Alien(double x, double y,Color color,boolean visible){
         super(x,y);
         this.x = x;
         this.y = y;
-        this.speed_x = 1.8;
+        this.speed_x = 2.8;
         this.MoveRight = true;
         this.MoveLeft = false;
         this.color = color;
-        this.visible = true;
+        this.visible = visible;
     }
 
     public void draw(Graphics g){

@@ -27,6 +27,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
     private final int msPerFrame = 1000 / framesPerSecond;
     private Timer timer;
     private int frame = 0;
+    private double dt;
 
     private boolean isLeftKeyPressed;
     private boolean isRightKeyPressed;
@@ -58,7 +59,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
                 ax = 20;
                 ay += 25;
             }
-            aliens[i] = new Alien(ax,ay,new Color(218, 76, 216));
+            aliens[i] = new Alien(ax,ay,new Color(218, 76, 216),true);
             ax += 30;
         }
         this.bullets = new ArrayList<PlayerBullet>();
@@ -176,7 +177,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
 
      */
     public void fireBullet(){
-        if(isPlayerFired == true){
+        if(isPlayerFired == true && dt >= 2){
             bullets.add(new PlayerBullet(player.x+12.5, player.y-20));
         }
     }
@@ -213,18 +214,20 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
             }
         }
         for(int i = 0; i < aliens.length; i++){
-            if(aliens[i].x < 0){
-                for(int j = 0; j < aliens.length; j++){
-                    aliens[j].MoveLeft = false;
-                    aliens[j].MoveRight = true;
-                    aliens[j].y += 0;
+            if(aliens[i].visible == true){
+                if(aliens[i].x < 0){
+                    for(int j = 0; j < aliens.length; j++){
+                        aliens[j].MoveRight = true;
+                        aliens[j].MoveLeft = false;
+                        aliens[j].y += 3;
+                    }
                 }
-            }
-            if(aliens[i].x > canvasWidth-2){
-                for(int j = 0; j < aliens.length; j++){
-                    aliens[j].MoveLeft = true;
-                    aliens[j].MoveRight = false;
-                    aliens[j].y += 0;
+                if(aliens[i].x > canvasWidth-20){
+                    for(int j = 0; j < aliens.length; j++){
+                        aliens[j].MoveLeft = true;
+                        aliens[j].MoveRight = false;
+                        aliens[j].y += 3;
+                    }
                 }
             }
         }
@@ -235,15 +238,15 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
             boolean isCollide = false;
             if(aliens[i].visible == true){
                 for(int j = 0; j < bullets.size(); j++){
-                    if(bullets.get(j).y - aliens[i].y < 0  && bullets.get(j).x - aliens[i].x < 0){
-                        bullets.remove(aliens);
+                    if(bullets.get(j).x >= (aliens[i].x - 9) && bullets.get(j).x <= (aliens[i].x + 9) && bullets.get(j).y <= (aliens[i].y + 15)){
+                        bullets.remove(j);
                         isCollide = true;
                         aliens[i].visible = false;
-
+                        break;
                     }
                 }
                 if(isCollide == true){
-                    aliens[i] = new Alien(aliens[i].x,aliens[i].y,new Color(255,255,255));
+                    aliens[i] = new Alien(aliens[i].x,aliens[i].y,new Color(255,255,255),false);
                 }
             }
 
@@ -259,6 +262,9 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
         MoveBullet();
         fireBullet();
         OnTouch();
+        System.out.println(dt);
+        dt+=1;
+        if(dt > 2.5){dt=0;}
         // FIXME update game objects here
     }
 
@@ -311,8 +317,6 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
     public static void main(String[] args) {
         SpaceInvaders invaders = new SpaceInvaders();
         EventQueue.invokeLater(invaders);
-
-
 
 
     }
