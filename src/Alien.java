@@ -11,7 +11,7 @@ public class Alien extends GraphicsObject {
     Color color;
     boolean visible;
 
-    public Alien(double x, double y,Color color){
+    public Alien(double x, double y,Color color, boolean visible){
         super(x,y);
         this.x = x;
         this.y = y;

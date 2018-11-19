@@ -299,10 +299,10 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
      * @returns  true if the player has won, false otherwise
      */
     private boolean hasWonGame() {
-        boolean all = false;
+        boolean all = true;
         for(int i =0; i < aliens.length; i++){
             if(aliens[i].visible == true){
-                all = true;
+                all = false;
             }
         }
         if(all == true){
