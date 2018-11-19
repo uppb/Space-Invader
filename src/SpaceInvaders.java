@@ -1,11 +1,10 @@
 // utility
 
 // graphics
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.EventQueue;
-        import java.awt.Graphics;
+import javafx.scene.layout.BackgroundImage;
 
+import java.awt.*;
+import java.awt.Image;
 // events
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -131,12 +130,13 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
         g.setColor(this.backgroundColor);
         g.fillRect(0, 0, this.canvasWidth, this.canvasHeight);
         g.setColor(oldColor);
+
     }
 
     /* Respond to key release events
      *
      * A key release is when you let go of a key
-     * 
+     *
      * @param e  An object describing what key was released
      */
     public void keyReleased(KeyEvent e) {
@@ -148,7 +148,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
     /* Respond to key type events
      *
      * A key type is when you press then let go of a key
-     * 
+     *
      * @param e  An object describing what key was typed
      */
     public void keyTyped(KeyEvent e) {
@@ -158,7 +158,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
     /* Respond to key press events
      *
      * A key type is when you press then let go of a key
-     * 
+     *
      * @param e  An object describing what key was typed
      */
     public void keyPressed(KeyEvent e) {
@@ -217,29 +217,29 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
                 for(int j = 0; j < aliens.length; j++){
                     aliens[j].MoveLeft = false;
                     aliens[j].MoveRight = true;
-                    aliens[j].y += 3;
+                    aliens[j].y += 0;
                 }
             }
-            if(aliens[i].x > canvasWidth-20){
+            if(aliens[i].x > canvasWidth-2){
                 for(int j = 0; j < aliens.length; j++){
                     aliens[j].MoveLeft = true;
                     aliens[j].MoveRight = false;
-                    aliens[j].y += 3;
+                    aliens[j].y += 0;
                 }
             }
         }
     }
 
     public void OnTouch(){
-        for(int i = 0; i < aliens.length; i++){
+        for(int i=0; i < aliens.length; i++){
             boolean isCollide = false;
             if(aliens[i].visible == true){
                 for(int j = 0; j < bullets.size(); j++){
-                    if(bullets.get(j).y - aliens[i].y < 15 && bullets.get(j).x - aliens[i].x < 5){
-                        bullets.remove(j);
+                    if(bullets.get(j).y - aliens[i].y < 0  && bullets.get(j).x - aliens[i].x < 0){
+                        bullets.remove(aliens);
                         isCollide = true;
                         aliens[i].visible = false;
-                        break;
+
                     }
                 }
                 if(isCollide == true){
@@ -263,7 +263,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
     }
 
     /* Check if the player has lost the game
-     * 
+     *
      * @returns  true if the player has lost, false otherwise
      */
     private boolean hasLostGame() {
@@ -271,7 +271,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
     }
 
     /* Check if the player has won the game
-     * 
+     *
      * @returns  true if the player has won, false otherwise
      */
     private boolean hasWonGame() {
@@ -311,5 +311,9 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
     public static void main(String[] args) {
         SpaceInvaders invaders = new SpaceInvaders();
         EventQueue.invokeLater(invaders);
+
+
+
+
     }
 }
