@@ -120,7 +120,8 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
         if (hasWonGame()) {
             paintWinScreen(g);
         } else if (hasLostGame()) {
-            paintLoseScreen(g);
+            System.out.println("Lose");
+            //paintLoseScreen(g);
         } else {
             paintGameScreen(g);
         }
