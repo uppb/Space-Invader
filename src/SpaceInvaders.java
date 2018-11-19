@@ -120,8 +120,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
         if (hasWonGame()) {
             paintWinScreen(g);
         } else if (hasLostGame()) {
-            System.out.println("Lose");
-            //paintLoseScreen(g);
+            paintLoseScreen(g);
         } else {
             paintGameScreen(g);
         }
@@ -255,7 +254,8 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
             boolean isCollide = false;
             if(aliens[i].visible == true){
                 for(int j = 0; j < bullets.size(); j++){
-                    if(bullets.get(j).x >= (aliens[i].x - 9) && bullets.get(j).x <= (aliens[i].x + 9) && bullets.get(j).y <= (aliens[i].y + 15)){
+                    if(bullets.get(j).x >= (aliens[i].x - 9) && bullets.get(j).x <= (aliens[i].x + 9) && bullets.get(j).y <= (aliens[i].y + 15)
+                    && bullets.get(j).y >= (aliens[i].y - 15)){
                         bullets.remove(j);
                         isCollide = true;
                         aliens[i].visible = false;
@@ -292,7 +292,20 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
      * @returns  true if the player has lost, false otherwise
      */
     private boolean hasLostGame() {
-        return false; // FIXME delete this when ready
+        boolean lose = false;
+        for(int i = 0; i < alienBullets.size();i++) {
+            for(int j = 0; j < aliens.length; j++){
+                if((alienBullets.get(i).x >= (player.x - 30) && alienBullets.get(i).x <= (player.x + 30)) && player.y <= (alienBullets.get(i).y + 15)&&
+                        player.y >= (alienBullets.get(i).y - 15)){
+                    lose = true;
+                }else if(aliens[j].visible == true){
+                    if(aliens[j].x >= (player.x - 30) && aliens[j].x <= (player.x + 30) && aliens[j].y >= (player.y + 15) && aliens[j].y <= (player.y - 15)){
+                        lose = true;
+                    }
+                }
+            }
+        }
+        return lose;
     }
 
     /* Check if the player has won the game
@@ -306,9 +319,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
                 all = false;
             }
         }
-        if(all == true){
-            return true;
-        }else return false;
+        return all;
     }
 
     /* Paint the screen during normal gameplay
