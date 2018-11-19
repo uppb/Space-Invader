@@ -28,6 +28,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
     private Timer timer;
     private int frame = 0;
     private double dt;
+    private int ddt;
 
     private boolean isLeftKeyPressed;
     private boolean isRightKeyPressed;
@@ -36,6 +37,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
     private Player player;
     private Alien[] aliens = new Alien[48];
     private ArrayList<PlayerBullet> bullets;
+    private ArrayList<AlienBullet> alienBullets;
 
     private int ax;
     private int ay;
@@ -63,6 +65,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
             ax += 30;
         }
         this.bullets = new ArrayList<PlayerBullet>();
+        this.alienBullets = new ArrayList<AlienBullet>();
         // FIXME initialize your game objects
     }
 
@@ -181,6 +184,12 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
             bullets.add(new PlayerBullet(player.x+12.5, player.y-20));
         }
     }
+
+    public void fireAlienBullet(){
+        if((int)(Math.random()*100+1) == 1){
+            alienBullets.add(new AlienBullet(aliens[42].x+18,aliens[42].y+18));
+        }
+    }
     public void MoveBullet(){
         for(int i = 0; i < bullets.size(); i++){
             bullets.get(i).y -= bullets.get(i).speed_y;
@@ -188,7 +197,14 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
                 bullets.remove(i);
             }
         }
+        for(int i = 0; i < alienBullets.size(); i++){
+            alienBullets.get(i).y += alienBullets.get(i).speed_y;
+            if(alienBullets.get(i).y > canvasHeight){
+                alienBullets.remove(i);
+            }
+        }
     }
+
     public void PlayerAction(){
         if(player.x < 0){
             player.x += player.speed_x;
@@ -261,8 +277,11 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
         MoveAlien();
         MoveBullet();
         fireBullet();
+        fireAlienBullet();
         OnTouch();
-        dt+=1;
+        dt++;
+        ddt++;
+        if(ddt > 110){ddt = 0;}
         if(dt > 2.5){dt=0;}
         // FIXME update game objects here
     }
@@ -294,6 +313,9 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
         player.draw(g);
         for(int i = 0; i < bullets.size(); i++){
             bullets.get(i).draw(g);
+        }
+        for(int i = 0; i < alienBullets.size(); i++){
+            alienBullets.get(i).draw(g);
         }
     }
 
