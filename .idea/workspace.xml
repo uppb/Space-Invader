@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df4cb908-b58c-4411-ad39-9756d3a0ada3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Space_Invader/Alien.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Space_Invader/Alien.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Space_Invader/GraphicsObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Space_Invader/GraphicsObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Space_Invader/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Space_Invader/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Space_Invader/SpaceInvaders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Space_Invader/SpaceInvaders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Alien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphicsObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphicsObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerBullet.java" afterDir="false" />
+    <list default="true" id="bcb7f523-947e-4795-bf98-a9366cc9f8d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/SpaceInvaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceInvaders.java" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,109 +15,46 @@
     <session id="213081644">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.7" value="3" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="8" />
+          <entry key="java" value="2" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="2" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="1" />
-          <entry key="java" value="7084" />
+          <entry key="java" value="337" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7084" />
-          <entry key="PLAIN_TEXT" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-331675192">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="JAVA" value="337" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< Updated upstream
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GraphicsObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-=======
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="27" selection-end-line="20" selection-end-column="1" />
->>>>>>> Stashed changes
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SpaceInvaders.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="698">
-              <caret line="287" column="9" lean-forward="true" selection-start-line="287" selection-start-column="9" selection-end-line="287" selection-end-column="9" />
+            <state relative-caret-position="192">
+              <caret line="263" column="18" selection-start-line="263" selection-start-column="18" selection-end-line="263" selection-end-column="18" />
               <folding>
-                <element signature="e#7455#7456#0" expanded="true" />
-                <element signature="e#7515#7516#0" expanded="true" />
-                <element signature="e#7672#7673#0" expanded="true" />
-                <element signature="e#7732#7733#0" expanded="true" />
-              </folding>
-=======
-            <state relative-caret-position="187">
-              <caret line="180" column="13" lean-forward="true" selection-end-line="276" />
->>>>>>> Stashed changes
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PlayerBullet.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="285">
-              <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-=======
-            <state relative-caret-position="221">
-              <caret line="13" column="19" lean-forward="true" selection-end-line="22" />
->>>>>>> Stashed changes
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#7681#7682#0" expanded="true" />
+                <element signature="e#7741#7742#0" expanded="true" />
+                <element signature="e#7897#7898#0" expanded="true" />
+                <element signature="e#7957#7958#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,25 +63,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Alien.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="300">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-=======
-            <state relative-caret-position="238">
-              <caret line="15" column="31" lean-forward="true" selection-end-line="25" />
->>>>>>> Stashed changes
+            <state relative-caret-position="229">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -159,11 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Player.java" />
-        <option value="$PROJECT_DIR$/src/playerBullet.java" />
-        <option value="$PROJECT_DIR$/src/GraphicsObject.java" />
-        <option value="$PROJECT_DIR$/src/Player.java" />
-        <option value="$PROJECT_DIR$/src/PlayerBullet.java" />
         <option value="$PROJECT_DIR$/src/Alien.java" />
         <option value="$PROJECT_DIR$/src/SpaceInvaders.java" />
       </list>
@@ -175,18 +88,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="2560" />
-    <option name="height" value="1347" />
-  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,17 +116,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< Updated upstream
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542490408081" />
-=======
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542491201640" />
->>>>>>> Stashed changes
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542589089592" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -251,72 +149,51 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="df4cb908-b58c-4411-ad39-9756d3a0ada3" name="Default Changelist" comment="" />
-      <created>1542259086222</created>
+      <changelist id="bcb7f523-947e-4795-bf98-a9366cc9f8d6" name="Default Changelist" comment="" />
+      <created>1542587113444</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1542259086222</updated>
-      <workItem from="1542259087544" duration="2295000" />
-      <workItem from="1542261402277" duration="300000" />
-      <workItem from="1542306911777" duration="2763000" />
-      <workItem from="1542309753351" duration="1382000" />
-      <workItem from="1542321405592" duration="965000" />
-      <workItem from="1542329611633" duration="2653000" />
-      <workItem from="1542348349033" duration="6803000" />
-<<<<<<< Updated upstream
-      <workItem from="1542484128678" duration="6181000" />
-=======
-      <workItem from="1542484069663" duration="504000" />
->>>>>>> Stashed changes
+      <updated>1542587113444</updated>
+      <workItem from="1542587114897" duration="2099000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< Updated upstream
-    <option name="totallyTimeSpent" value="23342000" />
+    <option name="totallyTimeSpent" value="2099000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1347" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="817" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2648928" />
-=======
-    <option name="totallyTimeSpent" value="17665000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26701966" />
->>>>>>> Stashed changes
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32965517" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32988048" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32828686" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32965517" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32988048" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="SciView" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,157 +203,30 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GraphicsObject.java" />
-    <entry file="file://$PROJECT_DIR$/Player.java" />
-    <entry file="file://$PROJECT_DIR$/SpaceInvaders.java" />
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/GraphicsObject.java" />
-    <entry file="file://$PROJECT_DIR$/src/PlayerBullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="19" lean-forward="true" selection-end-line="22" />
->>>>>>> Stashed changes
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphicsObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="525">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-=======
-        <state relative-caret-position="238">
-          <caret line="15" column="31" lean-forward="true" selection-end-line="25" />
->>>>>>> Stashed changes
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SpaceInvaders.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="285">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1271" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Alien.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="229">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SpaceInvaders.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="287" column="9" lean-forward="true" selection-start-line="287" selection-start-column="9" selection-end-line="287" selection-end-column="9" />
+        <state relative-caret-position="192">
+          <caret line="263" column="18" selection-start-line="263" selection-start-column="18" selection-end-line="263" selection-end-column="18" />
           <folding>
-            <element signature="e#7455#7456#0" expanded="true" />
-            <element signature="e#7515#7516#0" expanded="true" />
-            <element signature="e#7672#7673#0" expanded="true" />
-            <element signature="e#7732#7733#0" expanded="true" />
-=======
-        <state relative-caret-position="187">
-          <caret line="180" column="13" lean-forward="true" selection-end-line="276" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="27" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
->>>>>>> Stashed changes
+            <element signature="e#7681#7682#0" expanded="true" />
+            <element signature="e#7741#7742#0" expanded="true" />
+            <element signature="e#7897#7898#0" expanded="true" />
+            <element signature="e#7957#7958#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>10</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Space_Invader</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
